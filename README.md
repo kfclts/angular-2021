@@ -14,3 +14,8 @@ ng serve
 ## 12 
 ### Install bootstrap
 npm install --save bootstrap@3
+
+## 19
+### Install emmet for your IDE
+now you can type `app-server` then press tab, it will gen `<app-server></app-server>` automatically
+
