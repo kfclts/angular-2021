@@ -10,3 +10,7 @@ ng new my-first-app --no-strict
 ng serve
 
 ### it will start server at `http://localhost:4200/`
+
+## 12 
+### Install bootstrap
+npm install --save bootstrap@3
