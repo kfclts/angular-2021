@@ -19,3 +19,10 @@ npm install --save bootstrap@3
 ### Install emmet for your IDE
 now you can type `app-server` then press tab, it will gen `<app-server></app-server>` automatically
 
+
+## 20
+### Generate Component
+ng generate component servers
+ng g c servers
+
+remove `servers.component.spec.ts` since now we don't need test
