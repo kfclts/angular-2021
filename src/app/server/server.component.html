@@ -1,2 +1,8 @@
-<h5>{{'Server'}} with ID {{serverId}} is {{ getServerStatus()}}</h5>
+<!--
+'backgroung-color': 'black' -> Javascript property name
+'backgroundColor': 'red'
+-->
+
+<!-- attribute directive -->
+<p [ngStyle]="{'backgroundColor': getColor()}">{{'Server'}} with ID {{serverId}} is {{ getServerStatus()}}</p>
 <!--                string interpolation syntax -->
