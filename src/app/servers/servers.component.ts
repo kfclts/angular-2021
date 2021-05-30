@@ -12,6 +12,7 @@ export class ServersComponent implements OnInit {
 
   allowNewServer = false
   serverCreationStatus = 'No server was created!'
+  serverName = ''
 
   constructor() {
     setTimeout(() => {
@@ -24,5 +25,12 @@ export class ServersComponent implements OnInit {
 
   onCreateServer() {
     this.serverCreationStatus = 'Server was created!'
+  }
+
+  onUpdateServerName(event: Event) {
+    this.serverName = (<HTMLInputElement>event.target).value;
+    // this.serverName = (event.target as HTMLInputElement).value;
+    // 1. We are receiving an event  from HTML page and its of target  in value . As its from HTML event, angular doesn't recognize it. So, we explicitly cast event.target  to (<HTMLInputElement>event.target)
+    // If you are not familiar with casting , google it.
   }
 }
