@@ -6,5 +6,6 @@
 <!-- attribute directive -->
 <!-- Unlike structural directives, attribute directive dont't add or remove elements.
 They only change the element they were placed on -->
-<p [ngStyle]="{'backgroundColor': getColor()}">{{'Server'}} with ID {{serverId}} is {{ getServerStatus()}}</p>
+<p [ngStyle]="{'backgroundColor': getColor()}" [ngClass]="{online: serverStatus === 'online'}">{{'Server'}} with ID
+  {{serverId}} is {{ getServerStatus()}}</p>
 <!--                string interpolation syntax -->
